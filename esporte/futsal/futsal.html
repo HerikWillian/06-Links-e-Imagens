@@ -36,37 +36,57 @@
             text-align: center;
         }
         .product img {
-            width: 100%;
+            width: 50%;
             height: auto;
         }
         .sport-info img {
+            display: block;
             max-width: 100%;
             height: auto;
-            margin-bottom: 10px;
+            margin: 50px auto;
+        }
+        .marca img {
+            display: block;
+            width: 5%;
+            height: auto;
+            margin: 5px auto;
         }
         footer {
             background-color: #333;
             color: white;
             text-align: center;
             padding: 10px;
-            position: fixed;
+            position: left;
             bottom: 0;
             width: 100%;
+        }
+        .back-link {
+            font-size: 18px; 
+            font-family: 'Verdana', sans-serif;
+            color: #333;
+            text-decoration: none;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+        .back-link:hover {
+            color: #000;
         }
     </style>
 </head>
 <body>
     <header>
+    <div class="marca">
+        <img src="/imgs/minha marca.jpg" alt="Logomarca da Loja">
         <h1>Futsal</h1>
-        <a href="/index.html">Voltar para a Página Principal</a>
+    </div>
     </header>
 
     <div class="content">
         <div class="sport-info">
-            <a href="/index.html">Voltar para a Página Principal</a>
+            <a href="/index.html" class="back-link">&#8592; Voltar para a Página Principal.</a>
             <h2>Sobre o Futsal</h2>
             <p>O futsal é uma versão do futebol jogada em quadra coberta, famosa por sua velocidade e habilidade técnica. O Brasil é uma das maiores potências do futsal, com inúmeros títulos mundiais.</p>
-            <img src="imagens/historia-futsal.jpg" alt="Imagem representativa do futsal">
+            <img src="/imgs/representaçãofutsal.jpeg" alt="Imagem representativa do futsal">
             <p>Para saber mais sobre o futsal, visite <a href="https://www.cbfs.com.br/" target="_blank">o site oficial da Confederação Brasileira de Futsal (CBFS)</a> ou confira <a href="https://pt.wikipedia.org/wiki/Futsal" target="_blank">este artigo na Wikipédia</a>.</p>
         </div>
 
@@ -74,21 +94,21 @@
             <h2>Produtos Disponíveis</h2>
             <div class="product">
                 <h3>Bola de Futsal Oficial</h3>
-                <img src="imagens/bola-futsal.jpg" alt="Bola de Futsal Oficial">
+                <img src="/imgs/bolafutsal.jpeg" alt="Bola de Futsal Oficial">
                 <p>Preço: R$ 129,90</p>
                 <p>Descrição: Bola de futsal aprovada pela CBFS, ideal para partidas em quadras indoor.</p>
                 <p>Tamanhos disponíveis: Oficial</p>
             </div>
             <div class="product">
                 <h3>Tênis de Futsal</h3>
-                <img src="imagens/tenis-futsal.jpg" alt="Tênis de Futsal">
+                <img src="/imgs/tenisfutsal.jpeg" alt="Tênis de Futsal">
                 <p>Preço: R$ 279,90</p>
                 <p>Descrição: Tênis de futsal com solado antiderrapante, projetado para agilidade e conforto.</p>
                 <p>Tamanhos disponíveis: 38, 40, 42, 44</p>
             </div>
             <div class="product">
                 <h3>Camisa Oficial de Futsal</h3>
-                <img src="imagens/camisa-futsal.jpg" alt="Camisa Oficial de Futsal">
+                <img src="/imgs/camisafutsal.jpeg" alt="Camisa Oficial de Futsal">
                 <p>Preço: R$ 159,90</p>
                 <p>Descrição: Camisa oficial de time, confeccionada com tecido leve e respirável.</p>
                 <p>Tamanhos disponíveis: P, M, G, GG</p>
@@ -97,7 +117,7 @@
     </div>
 
     <footer>
-        <p>&copy; 2024 Loja de Esportes. Todos os direitos reservados.</p>
+        <p>&copy; 2024 Loja de Esportes.</p>
     </footer>
 </body>
 </html>

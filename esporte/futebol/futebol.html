@@ -30,36 +30,58 @@
             text-align: center;
         }
         .product img {
-            width: 100%;
+            width: 50%;
             height: auto;
         }
         .sport-info img {
+            display: block;
             max-width: 100%;
             height: auto;
-            margin-bottom: 10px;
+            margin: 50px auto;
+        }
+        .marca img {
+            display: block;
+            width: 5%;
+            height: auto;
+            margin: 5px auto;
         }
         footer {
             background-color: #333;
             color: white;
             text-align: center;
             padding: 10px;
-            position: fixed;
+            position: left;
             bottom: 0;
             width: 100%;
+        }
+        .back-link {
+            font-size: 18px;
+            font-family: 'Verdana', sans-serif; 
+            color: #333; 
+            text-decoration: none;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+        .back-link:hover {
+            color: #000; 
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Futebol</h1>
-        <a href="/index.html">Voltar para a Página Principal</a>
+        <div class="marca">
+            <img src="/imgs/minha marca.jpg" alt="Logomarca da Loja">
+            <h1>Futebol</h1>
+        </div>
     </header>
 
     <div class="content">
         <div class="sport-info">
+            <a href="/index.html" class="back-link">&#8592; Voltar para a Página Principal.</a>
             <h2>Sobre o Futebol</h2>
-            <p>O futebol é o esporte mais popular do mundo, conhecido por sua história rica e campeonatos emocionantes. Grandes atletas como Pelé e Maradona deixaram marcas eternas no esporte.</p>
-            <img src="imagens/historia-futebol.jpg" alt="Imagem representativa do futebol">
+            <p>O futebol é o esporte mais popular do mundo, conhecido por sua história rica e campeonatos emocionantes. Grandes atletas como Pelé e Maradona deixaram marcas eternas no esporte, consideramos Cristiano Ronaldo e Messi dentro dessa
+                marca, pois ambos têm uma grande história.</p>
+            <img src="/imgs/representaçãofutebol.jpeg" alt="Imagem representativa do futebol">
             <p>Para saber mais sobre a história do futebol, visite <a href="https://www.fifa.com/" target="_blank">o site da FIFA</a> ou confira <a href="https://pt.wikipedia.org/wiki/Futebol" target="_blank">este artigo na Wikipédia</a>.</p>
         </div>
 
@@ -67,21 +89,21 @@
             <h2>Produtos Disponíveis</h2>
             <div class="product">
                 <h3>Bola de Futebol Oficial</h3>
-                <img src="imagens/bola-futebol.jpg" alt="Bola de Futebol Oficial">
+                <img src="/imgs/bolafuteboll.jpeg" alt="Bola de Futebol Oficial">
                 <p>Preço: R$ 149,90</p>
                 <p>Descrição: Bola de futebol aprovada pela FIFA, ideal para partidas profissionais e amadoras.</p>
                 <p>Tamanhos disponíveis: P, M, G</p>
             </div>
             <div class="product">
                 <h3>Chuteira de Futebol</h3>
-                <img src="imagens/chuteira.jpg" alt="Chuteira de Futebol">
+                <img src="/imgs/chuteirafutebol.jpeg" alt="Chuteira de Futebol">
                 <p>Preço: R$ 299,90</p>
                 <p>Descrição: Chuteira leve e confortável, projetada para máximo desempenho em campo.</p>
                 <p>Tamanhos disponíveis: 38, 40, 42, 44</p>
             </div>
             <div class="product">
                 <h3>Camisa Oficial do Time</h3>
-                <img src="imagens/camisa-time.jpg" alt="Camisa Oficial do Time">
+                <img src="/imgs/camisatimeoficial.jpeg" alt="Camisa Oficial do Time">
                 <p>Preço: R$ 199,90</p>
                 <p>Descrição: Camisa oficial do time, fabricada com tecido de alta qualidade para maior conforto.</p>
                 <p>Tamanhos disponíveis: P, M, G, GG</p>
@@ -90,7 +112,7 @@
     </div>
 
     <footer>
-        <p>&copy; 2024 Loja de Esportes. Todos os direitos reservados.</p>
+        <p>&copy; 2024 Loja de Esportes.</p>
     </footer>
 </body>
 </html>

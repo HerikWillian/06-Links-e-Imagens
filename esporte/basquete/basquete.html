@@ -17,6 +17,7 @@
             padding: 10px;
             text-align: center;
         }
+        
         .content {
             padding: 20px;
         }
@@ -30,58 +31,79 @@
             text-align: center;
         }
         .product img {
-            width: 100%;
+            width: 50%;
             height: auto;
         }
         .sport-info img {
+            display: block;
             max-width: 100%;
             height: auto;
-            margin-bottom: 10px;
+            margin: 50px auto;
+        }
+        .marca img {
+            display: block;
+            width: 5%;
+            height: auto;
+            margin: 5px auto;
         }
         footer {
             background-color: #333;
             color: white;
             text-align: center;
             padding: 10px;
-            position: fixed;
+            position: left;
             bottom: 0;
             width: 100%;
+        }
+        .back-link {
+            font-size: 18px; 
+            font-family: 'Verdana', sans-serif; 
+            color: #333; 
+            text-decoration: none;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+        .back-link:hover {
+            color: #000; 
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Basquete</h1>
-        <a href="/index.html">Voltar para a Página Principal</a>
+        <div class="marca">
+            <img src="/imgs/minha marca.jpg" alt="Logomarca da Loja">
+            <h1>Basquete</h1>
+        </div>
     </header>
 
     <div class="content">
         <div class="sport-info">
+            <a href="/index.html" class="back-link">&#8592; Voltar para a Página Principal</a>
             <h2>Sobre o Basquete</h2>
-            <p>O basquete é um dos esportes mais populares do mundo, famoso por suas jogadas espetaculares e campeonatos emocionantes. Grandes atletas como Michael Jordan e LeBron James são ícones do esporte.</p>
-            <img src="imagens/historia-basquete.jpg" alt="Imagem representativa do basquete">
+            <p>O basquete é um dos esportes mais populares do mundo, famoso por suas jogadas espetaculares e campeonatos emocionantes. Grandes atletas como Michael Jordan, LeBron James(papai LeBron) e Stephen Curry são ícones do esporte. Vale lembrar do Kobe Bryant :(</p>
+            <img src="/imgs/representaçãobasquete.jpeg" alt="Imagem representativa do basquete">
             <p>Para saber mais sobre a história do basquete, visite <a href="https://www.nba.com/" target="_blank">o site oficial da NBA</a> ou confira <a href="https://pt.wikipedia.org/wiki/Basquetebol" target="_blank">este artigo na Wikipédia</a>.</p>
         </div>
 
         <div class="product-list">
-            <h2>Produtos Disponíveis</h2>
+            <h2>Produtos Disponíveis:</h2>
             <div class="product">
                 <h3>Bola de Basquete Profissional</h3>
-                <img src="imagens/bola-basquete.jpg" alt="Bola de Basquete Profissional">
+                <img src="/imgs/bolabasquete.jpeg" alt="Bola de Basquete Profissional">
                 <p>Preço: R$ 179,90</p>
                 <p>Descrição: Bola de basquete com material de alta durabilidade, ideal para quadras indoor e outdoor.</p>
                 <p>Tamanhos disponíveis: Oficial</p>
             </div>
             <div class="product">
                 <h3>Tênis de Basquete</h3>
-                <img src="imagens/tenis-basquete.jpg" alt="Tênis de Basquete">
+                <img src="/imgs/tenisbasquete.jpeg" alt="Tênis de Basquete">
                 <p>Preço: R$ 399,90</p>
                 <p>Descrição: Tênis de basquete com suporte extra para tornozelo, garantindo estabilidade e conforto durante o jogo.</p>
                 <p>Tamanhos disponíveis: 38, 40, 42, 44</p>
             </div>
             <div class="product">
                 <h3>Camisa de Time de Basquete</h3>
-                <img src="imagens/camisa-basquete.jpg" alt="Camisa de Time de Basquete">
+                <img src="/imgs/camisabasquete.jpeg" alt="Camisa de Time de Basquete">
                 <p>Preço: R$ 249,90</p>
                 <p>Descrição: Camisa oficial de time, feita de tecido respirável para máximo conforto em quadra.</p>
                 <p>Tamanhos disponíveis: P, M, G, GG</p>
@@ -90,7 +112,7 @@
     </div>
 
     <footer>
-        <p>&copy; 2024 Loja de Esportes. Todos os direitos reservados.</p>
+        <p>&copy; 2024 Loja de Esportes.</p>
     </footer>
 </body>
 </html>
